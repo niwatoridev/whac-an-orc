@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Whac-an-Orc</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <button id="btnIniciar" onclick="BeginGame()">
+          <img src="assets\images\buttons\begin.png" alt="beging-btn" />
+        </button>
+        <br />
+      </div>
+      <div class="logoImg">
+        <img src="assets\images\logo.png" alt="whac an orc logo" />
+      </div>
+
+      <div class="scoresInfo">
+        <div>
+          <img class="scoreBtn" src="assets\images\buttons\Score.png" alt="" />
+          <h2 id="score">0</h2>
+        </div>
+        <div>
+          <img class="scoreBtn" src="assets\images\buttons\time.png" alt="" />
+          <h2 id="time-left">20</h2>
+        </div>
+      </div>
+    </header>
+    <div class="gameCanvas">
+      <div class="grid">
+        <div class="square" id="1"></div>
+        <div class="square" id="2"></div>
+        <div class="square" id="3"></div>
+        <div class="square" id="4"></div>
+        <div class="square" id="5"></div>
+        <div class="square" id="6"></div>
+        <div class="square" id="7"></div>
+        <div class="square" id="8"></div>
+        <div class="square" id="9"></div>
+        <div class="square" id="10"></div>
+        <div class="square" id="11"></div>
+        <div class="square" id="12"></div>
+        <div class="square" id="13"></div>
+        <div class="square" id="14"></div>
+        <div class="square" id="15"></div>
+        <div class="square" id="16"></div>
+      </div>
+      <div></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

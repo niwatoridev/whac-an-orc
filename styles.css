@@ -1,0 +1,75 @@
+* {
+    
+}
+
+#btnIniciar {
+    background-color: transparent;
+    border-color: transparent;
+   }
+
+   #btnIniciar img{
+     width: 200px;
+   }
+
+header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap-reverse;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+}
+
+body {
+    background-image: url("assets/images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid {
+    width: 1600px;
+    height: 406px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+
+.square {
+    height: 200px;
+    width: 200px;
+   
+}
+
+.orc {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("assets/images/golem/golem-no-hit.png");
+}
+
+.gameCanvas {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+    cursor: url(assets/images/fire-sword.png), auto;
+}
+
+.scoresInfo 
+	{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: stretch;
+    }
+
+    .scoresInfo div {
+        position: relative;
+    }
+
+    .scoreBtn {
+        width: 200px;
+    }
