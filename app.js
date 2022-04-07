@@ -96,3 +96,4 @@ function gameEnd() {
 }
 
 
+/* by NiwatoriDev */
