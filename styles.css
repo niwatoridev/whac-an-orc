@@ -1,6 +1,4 @@
-* {
-    
-}
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 #btnIniciar {
     background-color: transparent;
@@ -47,6 +45,9 @@ body {
 }
 
 .gameCanvas {
+    margin-top: 400px;
+    margin-left: 100px;
+    position: absolute;
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -72,4 +73,24 @@ body {
 
     .scoreBtn {
         width: 200px;
+    }
+
+    #score {
+        position: absolute;
+        top: 54px;
+        left: 95px;
+        font-family: 'Press Start 2P', cursive;
+        
+        
+    }
+
+    .timeBtn {
+        width: 200px;
+    }
+
+    #time-left {
+        position: absolute;
+        top: 54px;
+        left: 80px;
+        font-family: 'Press Start 2P', cursive;
     }

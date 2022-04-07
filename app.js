@@ -68,7 +68,10 @@ function countDown() {
 let countDownTimerId;
 
 function BeginGame() {
+    currentTime = 20;
     countDownTimerId = setInterval(countDown, 1000);
     moveMole();
     document.getElementById('btnIniciar').style.display = "none";
 }
+
+
