@@ -94,3 +94,40 @@ body {
         left: 80px;
         font-family: 'Press Start 2P', cursive;
     }
+
+
+
+
+#game-over {
+    font-family: 'Press Start 2P', cursive;
+    color: #ffffff;
+    padding: 20px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-top: -200px;
+    margin-left: -350px;
+    height:200px;
+    width:250px;
+    text-align: center;
+}
+
+
+#restartBtn {
+    position: absolute;
+    top: 360px;
+}
+
+#scoreTxt {
+    position: relative;
+    bottom: 250px;
+    left: 10px;
+    width: 450px;
+    color: black;
+}
+
+#instructions {
+    position: absolute;
+    top: 400px;
+    left: 870px;
+}

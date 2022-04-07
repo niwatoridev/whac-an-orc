@@ -2,6 +2,7 @@ const squares = document.querySelectorAll('.square');
 const orc = document.querySelector('.orc');
 const score = document.querySelector('#score');
 const timeLeft = document.querySelector('#time-left');
+var swordSoundOne = new Audio('assets/audio/espada-aire.mp3');
 
 let result = 0;
 let hitPosition;
@@ -25,6 +26,7 @@ squares.forEach(square => {
             result++;
             score.textContent = result;
             hitPosition = null;
+            swordSoundOne.play()
            
 
         }
@@ -60,18 +62,37 @@ function countDown() {
     if(currentTime == 0) {
         clearInterval(timerId);
         clearInterval(countDownTimerId);
-        document.getElementById('btnIniciar').style.display = "block";
-        alert("GAME OVER! Tu puntuación final fue de: " + result);
+       
+        gameEnd();
+        
     }
 }
+        
 
 let countDownTimerId;
 
 function BeginGame() {
-    currentTime = 20;
+    
+    
     countDownTimerId = setInterval(countDown, 1000);
     moveMole();
     document.getElementById('btnIniciar').style.display = "none";
+    let gameOver = document.getElementById("game-over");
+    gameOver.style.display = "none";
+    let instructionsButton = document.getElementById("instructions");
+    instructionsButton.style.display = "none";
+    
 }
 
-//test del branchs
+
+function gameEnd() {
+    
+    let scoreText = document.getElementById("scoreTxt");
+    scoreText.textContent = `You hitted ${result} ogres, nice job.`
+    let gameOver = document.getElementById("game-over");
+    gameOver.style.display = "block";
+    currentTime = 20;
+    result = 0;
+}
+
+
